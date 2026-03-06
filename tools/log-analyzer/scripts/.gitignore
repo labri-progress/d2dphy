@@ -1,0 +1,6 @@
+!/.gitignore
+!/generate-libphysec-bindings.sh
+!/generate-libsts-bindings.sh
+!/clippy-watch.sh
+!/test-watch.sh
+!/run-watch.sh

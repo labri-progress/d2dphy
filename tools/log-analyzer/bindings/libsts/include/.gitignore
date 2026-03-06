@@ -1,0 +1,6 @@
+!/.gitignore
+!/externs.h
+!/defs.h
+!/cephes.h
+!/utilities.h
+!/config.h

@@ -1,0 +1,33 @@
+[package]
+name = "log-analyzer"
+version = "0.1.0"
+description = "a tool for analyzing PLSKG logs in order to gather meaningful metrics and metadatas!"
+authors = ["Lucas <Ike>"]
+license-file = "LICENCE.md"
+repository = "https://github.com/labri-progress/PHYsec_stm32"
+readme = "README.md"
+keywords = [
+  "Physical Layer Security",
+  "Physical Layer Security Key Generation Log Analysis",
+]
+categories = ["command-line-utilities", "log-analysis"]
+edition = "2021"
+
+[dependencies]
+cc = "1.2.27"
+chrono = "0.4.41"
+colored = "3.0.0"
+enum-iterator = "2.1.0"
+hex = "0.4.3"
+libc = "0.2.174"
+regex = "1.11.1"
+statrs = "0.18.0"
+tabled = "0.20.0"
+thiserror = "2.0.12"
+
+[build-dependencies]
+bindgen = "0.59"
+regex = "1.0"
+
+[profile.release]
+debug = true

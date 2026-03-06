@@ -1,0 +1,5 @@
+#include "../../../STM32PlatformCode/Firmware/SubGHz_Phy/App/libphysec/acquisition.h"
+#include "../../../STM32PlatformCode/Firmware/SubGHz_Phy/App/libphysec/packet.h"
+#include "../../../STM32PlatformCode/Firmware/SubGHz_Phy/App/libphysec/pre_processing.h"
+#include "../../../STM32PlatformCode/Firmware/SubGHz_Phy/App/libphysec/quantization.h"
+#include "../../../STM32PlatformCode/Firmware/SubGHz_Phy/App/libphysec/reconciliation/reconciliation.h"

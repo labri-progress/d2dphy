@@ -1,0 +1,6 @@
+!/.gitignore
+!/libphysec/
+!/libphysec_bindgen_headers.h
+!/libsts
+!/libsts_bindgen_headers.h
+!/physec_additional.rs

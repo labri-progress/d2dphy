@@ -1,0 +1,28 @@
+title = "PHYsec Key Generation configuration file"
+
+[metadata]
+title = "LoRa-Based Physical Layer Key Generation for Secure V2V/V2I Communications"
+
+[keygen]
+is_master = true
+csi_type = 0
+pre_process_type = 1
+quant_type = 17
+recon_type = 2
+probe_padding = 15 
+probe_delay = 100 
+
+[telemetry]
+enabled = true
+logging_enabled = true
+keygen_info_enabled = true
+
+[radio]
+modulation = "LoRa"
+
+[radio.radio_config] 
+spreading_factor = 8 
+bandwidth = 125
+tx_power = 17 
+
+
