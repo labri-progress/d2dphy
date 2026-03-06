@@ -1,0 +1,37 @@
+libsts: obj
+	ar rcs libsts.a obj/frequency.o obj/externs.o obj/blockFrequency.o obj/cephes.o obj/longestRunOfOnes.o obj/dfft.o obj/discreteFourierTransform.o obj/nonOverlappingTemplateMatchings.o obj/linearComplexity.o obj/approximateEntropy.o obj/cusum.o
+
+obj: frequency.o externs.o block_frenquency.o cephes.o longest_rune_of_ones.o dfft.o discrete_fourier_transform.o non_overlapping_template_matchings.o linear_complexity.o approximate_entropy.o cusum.o
+
+cusum.o: ./src/cusum.c
+	gcc -c src/cusum.c -O2 -o obj/cusum.o
+
+approximate_entropy.o: ./src/approximateEntropy.c
+	gcc -c -O2 src/approximateEntropy.c -o obj/approximateEntropy.o
+
+linear_complexity.o: ./src/linearComplexity.c
+	gcc -c -O2 src/linearComplexity.c -o obj/linearComplexity.o
+
+non_overlapping_template_matchings.o: ./src/nonOverlappingTemplateMatchings.c
+	gcc -c -O2 src/nonOverlappingTemplateMatchings.c -o obj/nonOverlappingTemplateMatchings.o
+
+discrete_fourier_transform.o: ./src/discreteFourierTransform.c
+	gcc -c -O2 src/discreteFourierTransform.c -o obj/discreteFourierTransform.o
+
+dfft.o: ./src/dfft.c
+	gcc -c -O2 src/dfft.c -o obj/dfft.o
+
+longest_rune_of_ones.o: ./src/longestRunOfOnes.c
+	gcc -c -O2 src/longestRunOfOnes.c -o obj/longestRunOfOnes.o
+
+cephes.o: ./src/cephes.c
+	gcc -c -O2 src/cephes.c -o obj/cephes.o
+
+block_frenquency.o: ./src/blockFrequency.c
+	gcc -c -O2 src/blockFrequency.c -o obj/blockFrequency.o
+
+frequency.o: ./src/frequency.c
+	gcc -c -O2 src/frequency.c -o obj/frequency.o
+
+externs.o: ./include/externs.h ./src/externs.c
+	gcc -c -O2 src/externs.c -o obj/externs.o

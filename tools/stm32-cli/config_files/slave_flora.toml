@@ -1,0 +1,28 @@
+title = "PHYsec Key Generation configuration file"
+
+[metadata]
+title = "FLoRa: Sequential fuzzy extractor based physical layer key generation for LPWAN"
+title_alias = "FLoRa"
+
+[keygen]
+is_master = false
+csi_type = 0
+pre_process_type = 0
+quant_type = 0
+recon_type = 1
+probe_padding = 10
+probe_delay = 250
+
+[telemetry]
+enabled = true
+logging_enabled = true
+keygen_info_enabled = true
+
+[radio]
+modulation = "LoRa"
+
+[radio.radio_config] 
+spreading_factor = 7
+bandwidth = 125
+tx_power = 7
+

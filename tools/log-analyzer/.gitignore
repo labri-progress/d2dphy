@@ -1,0 +1,12 @@
+*
+!/.gitignore
+!/README.md
+!/LICENCE.md
+!/Cargo.toml
+!/Cargo.lock
+!/build.rs
+!/notes.md
+!/data
+!/src
+!/bindings
+!/scripts

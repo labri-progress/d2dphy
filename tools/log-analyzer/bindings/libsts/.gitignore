@@ -1,0 +1,6 @@
+!/.gitignore
+!/src/
+!/obj/
+!/include/
+!/makefile.bindings
+libsts.a

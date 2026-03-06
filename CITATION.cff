@@ -1,0 +1,29 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: D2DPLS
+message: 'If you use this platform, please cite it as below.'
+type: software
+authors:
+  - given-names: Stéphane
+    family-names: Delbruel
+    email: stephane.delbruel@u-bordeaux.fr
+    affiliation: Université de Bordeaux
+    orcid: 'https://orcid.org/0000-0003-2794-4792'
+  - given-names: Oumaima
+    family-names: Zanouni
+    email: oumaima.zanouni@u-bordeaux.fr
+    affiliation: Université de Bordeaux
+  - given-names: Lucas
+    family-names: Marques
+    email: lucas.marques@u-bordeaux.fr
+    affiliation: Université de Bordeaux
+repository-code: 'https://github.com/labri-progress/d2dpls'
+abstract: >-
+  An experimental platform for device-to-device physical
+  layer security
+license: CC-BY-NC-SA-4.0
+commit: e2c5ee117dd162c15f1aeb607446a4c0ace2860c
+version: v1.0
+date-released: '2026-03-01'

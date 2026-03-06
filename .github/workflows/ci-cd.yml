@@ -1,0 +1,34 @@
+name: "D2DPLS Ci/Cd"
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: "ubuntu-22.04"
+    steps:
+      - uses: actions/checkout@v3.1.0
+      - name: APT deps
+        run: "sudo apt install -y libudev-dev libclang-dev clang pkg-config build-essential"
+
+      - name: Rust dep
+        run: "curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs -o ./rustup.sh && chmod +x ./rustup.sh && ./rustup.sh --verbose --default-toolchain stable -y"
+
+      - name: Release Firmware
+        run: "make release -j"
+
+      - name: Debug Firmware
+        run: "make debug -j"
+
+      - name: STM32-cli
+        run: "make stm32-cli -j"
+
+      - name: STM32-flash
+        run: "make stm32-flash -j"
+
+      - name: Log-Analyzer
+        run: "make log-analyzer"
+

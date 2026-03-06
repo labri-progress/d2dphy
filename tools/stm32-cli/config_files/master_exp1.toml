@@ -1,0 +1,31 @@
+title = "PHYsec Key Generation configuration file"
+
+[metadata]
+title = "Dummy Expe1"
+title_alias = "Expe1"
+doi = "10.1016/j.future.2022.10.018"
+link = "https://linkinghub.elsevier.com/retrieve/pii/S0167739X22003284"
+
+[keygen]
+is_master = true
+csi_type = 0
+pre_process_type = 0 
+quant_type = 2
+recon_type = 2
+probe_padding = 10
+probe_delay = 250
+
+[telemetry]
+enabled = true
+logging_enabled = true
+keygen_info_enabled = true
+
+[radio]
+modulation = "LoRa"
+
+[radio.radio_config] 
+spreading_factor = 7 
+bandwidth = 125
+tx_power = 8
+
+

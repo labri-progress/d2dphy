@@ -1,0 +1,12 @@
+!/.gitignore
+!/frequency.c
+!/externs.c
+!/blockFrequency.c
+!/longestRunOfOnes.c
+!/dfft.c
+!/discreteFourierTransform.c
+!/nonOverlappingTemplateMatchings.c
+!/linearComplexity.c
+!/approximateEntropy.c
+!/cusum.c
+!/cephes.c
